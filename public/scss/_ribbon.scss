@@ -1,0 +1,345 @@
+.ribbon-wrapper {
+  position: relative;
+  background-color: #e8e8e8;
+}
+
+.ribbon {
+  position: relative;
+  float: left;
+  padding: 7px 10px;
+  margin: 10px 0 0 -2px;
+  background-color: #999;
+  color: #fff;
+  clear: left;
+}
+
+.ribbon-right {
+  float: right;
+  margin: 10px -2px 0 0;
+  clear: right;
+}
+
+.ribbon-vertical {
+  top: -12px;
+  left: 16px;
+  width: 35px;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.ribbon-vertical-right {
+  top: -12px;
+  float: right;
+  left: -12px;
+  width: 35px;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.ribbon {
+  &.ribbon-shadow {
+    -webkit-box-shadow: 2px 1px 5px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 1px 5px 0 rgba(0, 0, 0, 0.3);
+  }
+  &.ribbon-right.ribbon-shadow, &.ribbon-shadow.ribbon-vertical-right {
+    -webkit-box-shadow: -2px 1px 5px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: -2px 1px 5px rgba(0, 0, 0, 0.3);
+  }
+  &.ribbon-round {
+    border-radius: 0 5px 5px 0 !important;
+  }
+  &.ribbon-right.ribbon-round {
+    border-radius: 5px 0 0 5px !important;
+  }
+  &.ribbon-vertical.ribbon-round, &.ribbon-vertical-right.ribbon-round {
+    border-radius: 0 0 5px 5px !important;
+  }
+}
+
+.ribbon-wrapper .ribbon-content {
+  margin: 0;
+  padding: 25px 25px;
+  clear: both;
+}
+
+.ribbon-wrapper-badge {
+  .ribbon-content {
+    margin: 0;
+    padding: 25px 25px;
+    clear: both;
+  }
+  overflow: hidden;
+  position: relative;
+  background-color: #e8e8e8;
+  top: 0px;
+  left: 0px;
+}
+
+/* -------Ribbon Badge--------*/
+
+.ribbon-badge {
+  text-align: center;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  position: relative;
+  padding: 6px 0;
+  left: -30px;
+  top: 15px;
+  width: 100%;
+  background-color: #999;
+  color: #fff;
+}
+
+.ribbon-badge-right {
+  text-align: center;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  position: relative;
+  padding: 6px 0;
+  right: -30px;
+  top: 15px;
+  width: 100%;
+  background-color: #999;
+  color: #fff;
+}
+
+/* -------Ribbon Badge--------*/
+/* -------Ribbon Clip-------*/
+
+.ribbon-clip {
+  left: -10px;
+  margin-left: 0;
+  &.ribbon-right {
+    right: -8px;
+    left: auto;
+    &:after {
+      right: 0;
+      left: auto;
+      border-right-color: transparent;
+      border-left-color: #333;
+    }
+  }
+  &:after {
+    content: '';
+    left: 0;
+    position: absolute;
+    bottom: -10px;
+    border: 5px solid transparent;
+    border-top-color: #333;
+    border-right-color: #333;
+  }
+}
+
+/* -------Ribbon Clip-------*/
+
+/* -------Ribbon Bookmark--------*/
+
+.ribbon-bookmark {
+  &:before {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    display: block;
+    width: 0;
+    height: 0;
+    content: '';
+    border: 17px solid #999;
+    border-right: 10px solid transparent;
+  }
+  &.ribbon-right:before {
+    right: 100%;
+    left: auto;
+    border-right: 15px solid #999;
+    border-left: 10px solid transparent;
+  }
+  &.ribbon-vertical:before {
+    top: 100%;
+    left: 0;
+    margin-top: -15px;
+    border-right: 18px solid #999;
+    border-bottom: 10px solid transparent;
+  }
+  &.ribbon-vertical-right:before {
+    right: auto;
+    top: 100%;
+    left: 0;
+    margin-top: -15px;
+    border-right: 18px solid #999;
+    border-bottom: 10px solid transparent;
+    border-left: 17px solid #999;
+  }
+  &.ribbon-info:before {
+    border-color: #00BCD4;
+    border-right-color: transparent;
+  }
+  &.ribbon-success:before {
+    border-color: #4CAF50;
+    border-right-color: transparent;
+  }
+  &.ribbon-warning:before {
+    border-color: #FF9800;
+    border-right-color: transparent;
+  }
+  &.ribbon-danger:before {
+    border-color: #F44336;
+    border-right-color: transparent;
+  }
+  &.ribbon-primary:before {
+    border-color: #3F51B5;
+    border-right-color: transparent;
+  }
+  &.ribbon-right {
+    &.ribbon-info:before {
+      border-right-color: #00BCD4;
+      border-left-color: transparent;
+    }
+    &.ribbon-success:before {
+      border-right-color: #4CAF50;
+      border-left-color: transparent;
+    }
+    &.ribbon-warning:before {
+      border-right-color: #FF9800;
+      border-left-color: transparent;
+    }
+    &.ribbon-danger:before {
+      border-right-color: #F44336;
+      border-left-color: transparent;
+    }
+    &.ribbon-primary:before {
+      border-right-color: #3F51B5;
+      border-left-color: transparent;
+    }
+  }
+  &.ribbon-vertical.ribbon-info:before, &.ribbon-vertical-right.ribbon-info:before {
+    border-right-color: #00BCD4;
+    border-bottom-color: transparent;
+  }
+  &.ribbon-vertical.ribbon-success:before, &.ribbon-vertical-right.ribbon-success:before {
+    border-right-color: #4CAF50;
+    border-bottom-color: transparent;
+  }
+  &.ribbon-vertical.ribbon-warning:before, &.ribbon-vertical-right.ribbon-warning:before {
+    border-right-color: #FF9800;
+    border-bottom-color: transparent;
+  }
+  &.ribbon-vertical.ribbon-danger:before, &.ribbon-vertical-right.ribbon-danger:before {
+    border-right-color: #f44336;
+    border-bottom-color: transparent;
+  }
+  &.ribbon-vertical.ribbon-primary:before, &.ribbon-vertical-right.ribbon-primary:before {
+    border-right-color: #3F51B5;
+    border-bottom-color: transparent;
+  }
+}
+
+@each $key, $val in $context_colors {
+  .ribbon-#{$key} {
+    background-color: $val !important;
+    color: #fff;
+  }
+}
+
+/*-----Material Colors------*/
+
+@each $key, $val in $colors {
+  .ribbon-#{$key} {
+    background-color: $val !important;
+    color: #fff !important;
+  }
+}
+
+.ribbon-corner {
+  top: -10px;
+  left: 2px;
+  background-color: transparent !important;
+  padding: 6px 0 0 10px;
+
+  i {
+    position: relative;
+  }
+
+  &:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    content: '';
+    border: 30px solid transparent;
+    border-top-color: #009efb;
+    border-left-color: #009efb;
+  }
+
+}
+
+@each $key, $val in $context_colors {
+  .ribbon-#{$key} {
+    &.ribbon-corner:before{
+      border-top-color: $val;
+      border-left-color: $val;
+    }
+  }
+}
+
+@each $key, $val in $context_colors {
+  .ribbon-#{$key} {
+    &.ribbon-corner.ribbon-right{
+      &:before{
+        border-right-color: $val;
+        border-left-color: transparent !important;
+      }
+    }
+  }
+}
+
+.ribbon-corner {
+
+  &.ribbon-right {
+
+    &:before {
+      right: 0;
+      left: auto;
+      border-right-color: #999;
+      border-left-color: transparent !important;
+    }
+
+    right: 2px;
+    left: auto;
+    padding: 6px 10px 0 0;
+  }
+
+  &.ribbon-bottom {
+
+    &:before {
+      top: auto;
+      bottom: 0;
+      border-top-color: transparent;
+      border-bottom-color: #999;
+    }
+
+    bottom: 0px;
+    position: absolute;
+    top: auto !important;
+    padding: 0px 7px 0px 7px;
+  }
+}
+
+@each $key, $val in $context_colors {
+  .ribbon-#{$key} {
+    &.ribbon-corner.ribbon-bottom{
+      &:before{
+        border-top-color: transparent;
+        border-bottom-color: $val;
+      }
+    }
+  }
+}
+
+
+.ribbon-wrapper .ribbon-bottom + .ribbon-content {
+  padding: 40px 0px 50px 45px !important;
+}

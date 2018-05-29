@@ -1,0 +1,136 @@
+.banner-bottom {
+  background: url('../assets/images/widget/2-London.jpg') no-repeat 20% 20%;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+  -moz-background-size: cover;
+  min-height: 400px;
+  position: relative;
+}
+
+.row.margin-0 {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.weather-widget-top {
+  background: #fff;
+  padding: 1.5em;
+}
+
+.weather-widget-left {
+  h6 {
+    font-size: 1.1em;
+    color: #999;
+    margin-bottom: 10px;
+}
+  span {
+    font-weight: 300;
+    color: #F44336;
+}
+}
+
+.weather-widget-last {
+  float: left;
+  text-align: center;
+  border-left: 1px solid #E5E5E5;
+  p {
+    font-size: 1em;
+    color: #999;
+    margin-top: 1em;
+}
+  h6 {
+    font-size: 1em;
+    color: #999;
+    margin-bottom: 1em;
+    font-weight: 300;
+}
+}
+
+canvas {
+  &#partly-cloudy-night {
+    width: 50px;
+    height: 50px;
+}
+  &#clear-day, &#sleet, &#fog, &#wind, &#partly-cloudy-day, &#snow {
+    width: 30px;
+    height: 30px;
+}
+}
+
+.w-icon-left {
+  p {
+    font-size: 1em;
+    color: #fff;
+    padding-left: 1em;
+    span {
+      left: -.5em;
+  }
+}
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  font-size: 20px;
+}
+
+.weather-right-1 {
+  padding: 2em;
+  background: #F44336;
+}
+
+.weather-ri {
+  float: left;
+}
+
+.weather-ri-1 {
+  float: right;
+}
+
+.weather-ri-2 {
+  float: left;
+}
+
+.weather-ri-3 {
+  float: right;
+}
+
+.weather-ri h3 {
+  font-size: 1.3em;
+  color: #fff;
+  margin: 0.3em 0 0;
+}
+
+.weather-ri-2 h3, .weather-ri-3 h3 {
+  text-transform: capitalize;
+  font-size: 14px;
+  color: #fff;
+  margin: 0;
+  font-weight: 300;
+}
+
+.weather-ri-2 h3 span, .weather-ri-3 h3 span {
+  display: block;
+  line-height: 1em;
+}
+
+.weather-ri-1 p {
+  font-size: 2em;
+  color: #fff;
+  margin: 0;
+  font-weight: 600;
+}
+
+.weather-text {
+  padding: 0.5em 0 0;
+  h3 {
+    font-size: 1.8em;
+    color: #fff;
+    font-weight: 100;
+    margin-bottom: .5em;
+}
+  h4 {
+    font-size: 3em;
+    color: #fff;
+}
+}

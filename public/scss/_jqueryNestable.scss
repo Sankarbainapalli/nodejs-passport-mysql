@@ -1,0 +1,61 @@
+.dd-handle {
+  &.success {
+    border-left: 6px solid #4CAF50;
+}
+  &.primary {
+    border-left: 6px solid #2196F3;
+}
+  &.info {
+    border-left: 6px solid #00BCD4;
+}
+  &.warning {
+    border-left: 6px solid #FF9800;
+}
+  &.danger {
+    border-left: 6px solid #F44336;
+}
+  &.drag-success {
+    background-color: #4CAF50;
+    border: none;
+}
+  &.drag-info {
+    background-color: #00BCD4;
+    border: none;
+}
+  &.drag-warning {
+    background-color: #FF9800;
+    border: none;
+}
+  &.drag-primary {
+    background-color: #2196F3;
+    border: none;
+}
+  &.drag-danger {
+    background-color: #F44336;
+    border: none;
+}
+  &.drag-success:hover {
+    background: #4CAF50;
+    opacity: 0.8;
+}
+  &.drag-info:hover {
+    background: #00BCD4;
+    border: none;
+    opacity: 0.8;
+}
+  &.drag-warning:hover {
+    background: #FF9800;
+    border: none;
+    opacity: 0.8;
+}
+  &.drag-primary:hover {
+    background: #2196F3;
+    border: none;
+    opacity: 0.8;
+}
+  &.drag-danger:hover {
+    background: #F44336;
+    border: none;
+    opacity: 0.8;
+}
+}

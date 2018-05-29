@@ -1,0 +1,39 @@
+.ms-container {
+  width: auto !important;
+  .ms-list {
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    -ms-box-shadow: none !important;
+    box-shadow: none !important;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    -ms-border-radius: 0 !important;
+    border-radius: 0 !important;
+    &.ms-focus {
+      -webkit-box-shadow: none !important;
+      -moz-box-shadow: none !important;
+      -ms-box-shadow: none !important;
+      box-shadow: none !important;
+  }
+}
+  .ms-selectable, .ms-selection {
+    min-width: 250px !important;
+}
+  .ms-selectable li.ms-hover, .ms-selection li.ms-hover {
+    color: #000000 !important;
+    background-color: #e6e6e6 !important;
+}
+  .ms-selectable li {
+    &.ms-elem-selectable, &.ms-elem-selection {
+      padding: 9px 15px 6px 15px !important;
+  }
+}
+  .ms-selection li {
+    &.ms-elem-selectable, &.ms-elem-selection {
+      padding: 9px 15px 6px 15px !important;
+  }
+}
+  .ms-optgroup-label {
+    padding: 5px 0 0 8px !important;
+}
+}

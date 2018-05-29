@@ -1,0 +1,87 @@
+.badge {
+  padding: 3px 6px;
+  font-size: 10px;
+  border: 1px solid transparent;
+}
+
+.badge-radius {
+  @include border-radius(2px);
+}
+
+.badge-lg {
+  padding: 5px 9px 8px;
+  font-size: 16px;
+}
+
+.badge-sm {
+  padding: 2px 5px;
+  font-size: 10px;
+}
+
+.badge-above {
+  position: relative;
+  top: -21px;
+  margin: 0px -0.8em;
+  right: 7px;
+}
+
+.badge-primary {
+  color: #ffffff;
+  background-color: #3F51B5;
+}
+
+.badge-success {
+  color: #ffffff;
+  background-color: #4CAF50;
+}
+
+.badge-info {
+  color: #ffffff;
+  background-color: #00b0e4;
+}
+
+.badge-danger {
+  color: #ffffff;
+  background-color: #fb483a;
+}
+
+.badge-warning {
+  color: #ffffff;
+  background-color: #FF9800;
+}
+
+.badge-outline-success {
+  background-color: transparent;
+  border-color: #4CAF50;
+  color: #4CAF50;
+}
+
+.badge-outline-danger {
+  background-color: transparent;
+  border-color: #fb483a;
+  color: #fb483a;
+}
+
+.badge-outline-warning {
+  background-color: transparent;
+  border-color: #FF9800;
+  color: #FF9800;
+}
+
+.badge-outline-info {
+  background-color: transparent;
+  border-color: #00b0e4;
+  color: #00b0e4;
+}
+
+.badge-outline-default {
+  background-color: transparent;
+  border-color: #777;
+  color: #777;
+}
+
+.badge-outline-primary {
+  background-color: transparent;
+  border-color: #3F51B5;
+  color: #3F51B5;
+}

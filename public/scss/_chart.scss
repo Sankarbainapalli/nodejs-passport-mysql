@@ -1,0 +1,72 @@
+// Morris
+
+.morris-hover.morris-default-style {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+}
+
+//Flot
+
+.flot-chart {
+  width: 100%;
+  height: 320px;
+}
+
+.panel-switch-btn {
+  position: relative;
+  top: -20px;
+  right: 20px;
+  z-index: 9;
+  label {
+    font-weight: bold !important;
+  }
+}
+
+.legendLabel {
+  width: 85px !important;
+  position: relative;
+  left: 3px;
+}
+
+#multiple_axis_chart .legendLabel {
+  width: 160px !important;
+}
+
+// Sparkline
+
+.sparkline {
+  text-align: center;
+}
+
+// NVD3
+
+#bubble svg, #line-bar, #chart-line, #view-finder {
+  height: 500px;
+  min-width: 100px;
+  min-height: 100px;
+}
+
+#double-head, #donuts-holder {
+  height: 350px;
+}
+
+#donut_chart, #pie_chart svg {
+  height: 400px;
+}
+
+#double-head svg {
+  height: 350px;
+}
+
+.realtime-bar {
+  height: 350px;
+  margin-left: -25px;
+}
+
+.graph {
+  height: 350px;
+  width: 100%;
+  height: 300px;
+}

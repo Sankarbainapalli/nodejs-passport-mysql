@@ -1,0 +1,133 @@
+.pricing-table {
+  margin-right: 10px;
+  margin-left: 10px;
+  -webkit-box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  border-radius: 3px;
+}
+
+.pricing-top {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eaeaea;
+  &.blue {
+    background-color: #2196F3;
+    color: #fff;
+    .pricing-icon, .pricing-txt {
+      color: #fff;
+  }
+}
+  &.green {
+    background-color: #4CAF50;
+    color: #fff;
+    .pricing-icon, .pricing-txt {
+      color: #fff;
+  }
+}
+  &.red {
+    background-color: #F44336;
+    color: #fff;
+    .pricing-icon, .pricing-txt {
+      color: #fff;
+  }
+}
+  &.indigo {
+    background-color: #3F51B5;
+    color: #fff;
+    .pricing-icon, .pricing-txt {
+      color: #fff;
+  }
+}
+}
+
+.pricing-icon {
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin-right: auto;
+  margin-bottom: 15px;
+  margin-left: auto;
+  color: #121212;
+  font-size: 50px;
+}
+
+.p-embed {
+  &:after, &:before {
+    content: " ";
+    display: table;
+}
+  &:after {
+    clear: both;
+}
+}
+
+.pricing-txt {
+  font-size: 22px;
+  letter-spacing: 2px;
+}
+
+.pricing-table h2 {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-size: 25px;
+  line-height: 36px;
+  letter-spacing: 1.5px;
+}
+
+.li-pricing {
+  padding: 30px 10px 5px;
+  border-bottom: 1px dashed #eaeaea;
+  &.less-pd {
+    padding-top: 10px;
+    padding-bottom: 0px;
+}
+}
+
+.pricing-txt {
+  &.pric-nb {
+    margin-bottom: 0px;
+    font-size: 34px;
+}
+  font-size: 22px;
+  letter-spacing: 2px;
+}
+
+.pricing-bottom {
+  padding-top: 15px;
+  padding-bottom: 25px;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.07);
+}
+
+/*-------------Pricing Table 2------------------*/
+
+.pricing-table.pricing-basic .pricing-top {
+  padding-top: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid transparent;
+}
+
+.bg-gray-lighter-o {
+  background-color: rgba(0, 20, 35, 0.038);
+}
+
+.pricing-table.pricing-basic {
+  .li-pricing {
+    border-bottom: transparent;
+    &.less-pd {
+      padding-top: 15px;
+      padding-bottom: 0px;
+  }
+}
+  .pricing-txt.pric-nb {
+    margin-bottom: 0px;
+    font-size: 40px;
+}
+  .pricing-bottom {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+}

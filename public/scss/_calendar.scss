@@ -1,0 +1,272 @@
+.calendar-app .fc-button {
+  color: #333;
+  background-color: #fff;
+  border-color: #eaeaea;
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  height: auto;
+  background-image: none;
+  &.active {
+    color: #333;
+    background-color: #f5f5f5;
+    border-color: #d6d6d6;
+    &.focus, &:focus, &:hover {
+      color: #333;
+      background-color: #f5f5f5;
+      border-color: #d6d6d6;
+  }
+}
+  &.focus {
+    color: #333;
+    background-color: #f5f5f5;
+    border-color: #d6d6d6;
+}
+  &:active {
+    color: #333;
+    background-color: #f5f5f5;
+    border-color: #d6d6d6;
+    &.focus, &:focus, &:hover {
+      color: #333;
+      background-color: #f5f5f5;
+      border-color: #d6d6d6;
+  }
+}
+  &:focus, &:hover {
+    color: #333;
+    background-color: #f5f5f5;
+    border-color: #d6d6d6;
+}
+}
+
+.open > .dropdown-toggle.calendar-app .fc-button {
+  color: #333;
+  background-color: #f5f5f5;
+  border-color: #d6d6d6;
+  &.focus, &:focus, &:hover {
+    color: #333;
+    background-color: #f5f5f5;
+    border-color: #d6d6d6;
+}
+}
+
+.calendar-app .fc-button {
+  &.active, &:active {
+    background-image: none;
+}
+}
+
+.open > .dropdown-toggle.calendar-app .fc-button {
+  background-image: none;
+}
+
+.calendar-app .fc-button {
+  &.disabled {
+    &.focus, &:focus, &:hover {
+      background-color: #fff;
+      border-color: #eaeaea;
+  }
+}
+  &[disabled] {
+    &.focus, &:focus, &:hover {
+      background-color: #fff;
+      border-color: #eaeaea;
+  }
+}
+}
+
+fieldset[disabled] .calendar-app .fc-button {
+  &.focus, &:focus, &:hover {
+    background-color: #fff;
+    border-color: #eaeaea;
+}
+}
+
+.calendar-app {
+  .fc-button {
+    .badge {
+      color: #fff;
+      background-color: #333;
+  }
+    &.active, &.fc-state-active, &:active {
+      outline: 0;
+      background-image: none;
+      box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  }
+    .fc-icon {
+      margin: 0 .1em;
+      font-size: inherit;
+      font-family: FontAwesome !important;
+      color: #555;
+      &:after {
+        display: none;
+    }
+  }
+}
+  .fc-day:hover, .fc-state-highlight {
+    background-color: #f7f8f9;
+}
+  .fc-day-number {
+    font-size: 18px;
+    font-weight: 700;
+    color: #a1a2a3;
+}
+  .fc-view {
+    overflow: visible;
+}
+  .external-events {
+    margin: 0;
+    > div {
+      margin-right: 5px;
+      margin-bottom: 5px;
+      padding: 6px 10px;
+      color: #fff;
+      font-size: 11px;
+      border-radius: 2px;
+      cursor: move;
+  }
+    &:empty {
+      content: "EMRTPUY";
+  }
+}
+  .external-events-trash {
+    position: relative;
+    min-height: 120px;
+    &:after {
+      content: "\f00d";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #131e26;
+      opacity: 0;
+      font-family: FontAwesome;
+      color: #fff;
+      text-align: center;
+      font-size: 50px;
+      padding: 8%;
+      max-height: 100%;
+      -webkit-transition: all .3s ease;
+      transition: all .3s ease;
+      z-index: -1;
+  }
+    &.active:after {
+      opacity: 1;
+      z-index: 1;
+  }
+    &.hovered:after {
+      background-color: #fb797e;
+  }
+}
+  .external-event-color-selector .cirkle.selected {
+    border: 3px solid hsla(0, 0%, 100%, 0.5);
+}
+}
+
+.cirkle {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 500px;
+  margin: 0 .5em;
+  background-color: #ddd;
+  vertical-align: baseline;
+  border: 2px solid transparent;
+  &.text-left {
+    margin-left: 0;
+}
+  &.text-right {
+    margin-right: 0;
+}
+}
+
+.cirkle-primary {
+  background-color: #3F51B5;
+}
+
+.cirkle-success {
+  background-color: #4CAF50;
+}
+
+.cirkle-info {
+  background-color: #00BCD4;
+}
+
+.cirkle-warning {
+  background-color: #FF9800;
+}
+
+.cirkle-danger, .cirkle-red {
+  background-color: #F44336;
+}
+
+.cirkle-pink {
+  background-color: #E91E63;
+}
+
+.cirkle-purple {
+  background-color: #9C27B0;
+}
+
+.cirkle-green {
+  background-color: #4CAF50;
+}
+
+.cirkle-blue {
+  background-color: #2196F3;
+}
+
+.cirkle-teal {
+  background-color: #009688;
+}
+
+.cirkle-brown {
+  background-color: #795548;
+}
+
+.cirkle-yellow {
+  background-color: #ffe821;
+}
+
+.cirkle-gray {
+  background-color: #9E9E9E;
+}
+
+.cirkle-black {
+  background-color: #000;
+}
+
+.cirkle-sm {
+  width: 5px;
+  height: 5px;
+}
+
+.cirkle-lg {
+  width: 11px;
+  height: 11px;
+}
+
+.cirkle-xl {
+  width: 18px;
+  height: 18px;
+}
+
+.cirkle-outline {
+  background-color: transparent;
+  &.cirkle-primary {
+    border: 1px solid #5d9cec;
+}
+  &.cirkle-success {
+    border: 1px solid #27c24c;
+}
+  &.cirkle-info {
+    border: 1px solid #23b7e5;
+}
+  &.cirkle-warning {
+    border: 1px solid #ff902b;
+}
+  &.cirkle-danger {
+    border: 1px solid #f05050;
+}
+}

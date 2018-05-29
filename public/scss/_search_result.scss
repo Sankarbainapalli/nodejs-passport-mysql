@@ -1,0 +1,33 @@
+.hr-dashed {
+  border-top: 1px dashed #e7eaec;
+  color: #ffffff;
+  background-color: #ffffff;
+  height: 1px;
+  margin: 20px 0;
+}
+
+.search-result {
+
+  h2 {
+    font-size: 24px;
+}
+
+  h3 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 0;
+    color: #3F51B5;
+}
+
+  .search-link {
+    color: #4CAF50;
+}
+
+  a:hover, a:focus {
+    text-decoration: none;
+}
+}
+
+.search-form {
+  margin-top: 10px;
+}

@@ -1,0 +1,121 @@
+.dtp {
+  div {
+    &.dtp-date, &.dtp-time {
+      background: #00BCD4;
+  }
+}
+  > .dtp-content > .dtp-date-view > header.dtp-header {
+    background: #2196F3;
+}
+  .dtp-buttons {
+    .dtp-btn-ok {
+      margin-left: 10px;
+  }
+    .dtp-btn-clear {
+      margin-right: 10px !important;
+  }
+}
+  .p10 > a {
+    color: #fff;
+}
+  div.dtp-actual-year {
+    font-size: 1.5em;
+    color: #ffffff;
+}
+  table.dtp-picker-days tr td a.selected {
+    background: #00BCD4;
+    color: #fff;
+}
+}
+
+.datepicker {
+  .selected {
+    background-color: #999 !important;
+}
+  .active {
+    background-color: #03A9F4 !important;
+    &:hover {
+      background-color: #2196F3 !important;
+  }
+}
+  .input-daterange input {
+    text-align: left;
+}
+  table {
+    td {
+      color: #555;
+      font-weight: 300 !important;
+  }
+    th {
+      color: #333;
+      font-weight: 400 !important;
+  }
+}
+}
+
+.datetimepicker {
+  .active {
+    filter: none !important;
+    background-image: none !important;
+    &:hover {
+      filter: none !important;
+      background-image: none !important;
+  }
+}
+  table {
+    td {
+      color: #555;
+      font-weight: 300 !important;
+  }
+    th {
+      color: #333;
+      font-weight: 400 !important;
+  }
+}
+  .active {
+    background-color: #03A9F4 !important;
+    &:hover {
+      background-color: #2196F3 !important;
+  }
+}
+}
+
+.datepicker {
+  border-radius: 0px !important;
+  .datepicker-inline {
+    border: 1px solid #d7dce5 !important;
+}
+}
+
+.datetimepicker.datetimepicker-inline {
+  border: 1px solid #d7dce5 !important;
+}
+
+.input-group .input-group-addon.bg {
+  background: #2196F3;
+  border-color: #2196f3;
+  padding: 6px 12px;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.clockface .cell {
+  .inner.active, .outer.active {
+    background-color: #2196F3 !important;
+    background-image: none;
+    filter: none;
+}
+}
+
+.clockpicker-popover {
+  z-index: 10;
+  .popover-title {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #999;
+    text-align: center;
+    background-color: #fff;
+}
+}

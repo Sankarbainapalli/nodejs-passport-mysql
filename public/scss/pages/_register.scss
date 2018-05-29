@@ -1,0 +1,23 @@
+.register-ac {
+  background-color: #03A9F4;
+  padding-left: 0;
+  max-width: 360px;
+  margin: 5% auto;
+  overflow-x: hidden;
+
+  .register-box {
+
+    .msg {
+      color: #999;
+      letter-spacing: 1px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    a {
+      font-size: 14px;
+      text-decoration: none;
+      color: #00BCD4;
+    }
+  }
+}

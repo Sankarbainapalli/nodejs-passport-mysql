@@ -1,0 +1,274 @@
+.widget {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  background-color: #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  .widget-icon {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.12);
+}
+  &.style2 .widget-icon {
+    background-color: inherit;
+}
+  .widget-icon i {
+    color: #fff;
+    font-size: 45px;
+    line-height: 90px;
+}
+  .widget-body {
+    padding: 16px 20px;
+}
+  h2, h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #fff;
+}
+  .chart-bar {
+    margin-top: 24px;
+}
+  .chart-pie {
+    margin-top: 18px;
+}
+  canvas {
+    &#clear-day, &#sleet, &#fog, &#wind, &#partly-cloudy-day, &#snow {
+      width: 50px;
+      height: 50px;
+  }
+}
+}
+
+.pager-widget {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/*To-Do*/
+
+.todo_widget {
+  position: relative;
+  .card-header {
+    padding: 16px;
+}
+  .todo_heading {
+    background: #FFFFFF;
+    display: table;
+    width: 100%;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    .left-icon {
+      float: left;
+  }
+    .right-icon {
+      float: right;
+  }
+    .left-icon, .right-icon {
+      padding: 0px 15px;
+      background: #F44336;
+      color: #FFFFFF;
+      font-size: 20px;
+  }
+}
+  .list-todo {
+    position: relative;
+}
+}
+
+.todo_checkbox {
+  border: 2px solid #f9fe4d;
+}
+
+.todo_widget .list-todo {
+  &:hover li {
+    background-color: #FFFFFF;
+}
+  label {
+    color: #707780;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+  .notification {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+  label span {
+    margin-left: 10px;
+}
+  .list-todo-item.completed label {
+    opacity: 0.2 !important;
+    text-decoration: line-through;
+}
+}
+
+.list-todo-item {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  margin-bottom: -1px;
+  background-color: #fff;
+  border: 1px solid #e9ecf2;
+}
+
+.todo_widget .list-todo:before {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 50px;
+  overflow: hidden;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 8px 0 -3px #f6f6f6, 0 9px 1px -3px rgba(0, 0, 0, 0.2), 0 16px 0 -6px #f6f6f6, 0 17px 2px -6px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 8px 0 -3px #f6f6f6, 0 9px 1px -3px rgba(0, 0, 0, 0.2), 0 16px 0 -6px #f6f6f6, 0 17px 2px -6px rgba(0, 0, 0, 0.2);
+}
+
+/****************************************************
+                  Mail Widget
+****************************************************/
+
+.mail_widget {
+  .tab {
+    border-bottom: 1px solid #e9ecf2;
+    a {
+      font-size: 12px !important;
+      font-weight: 400;
+  }
+}
+  .mail_list {
+    position: relative;
+    max-height: 372px;
+    background: #FFFFFF;
+    padding-top: 10px;
+    .mails_holder {
+      padding: 0px;
+      max-height: 799px;
+      overflow: auto;
+      position: relative;
+      z-index: 0;
+      margin-bottom: 0;
+      li a {
+        display: inline-block;
+        width: 100%;
+        border-bottom: 1px solid #e9ecf2;
+        text-decoration: none;
+        padding: 0px 0px;
+        background: #FFFFFF;
+        &:last-child {
+          border-bottom-width: 0;
+      }
+        .message_list_block {
+          position: relative;
+          padding: 20px;
+          &.starred:before {
+            content: "\f005";
+            position: absolute;
+            left: 0;
+            font-family: "fontawesome";
+            color: #FF9800;
+            top: 35px;
+        }
+          &.unread {
+            background: #f3f4f8;
+        }
+          &.read {
+            opacity: 0.5;
+        }
+          &.active {
+            background-color: #F44336;
+            .mail_right {
+              margin-left: 60px;
+              .name, .right_details, h4 {
+                color: #FFFFFF;
+            }
+          }
+            .message_info {
+              color: #FFFFFF;
+          }
+        }
+      }
+        .left .image {
+          width: 50px;
+          height: 50px;
+          float: left;
+          img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+      }
+        .mail_right {
+          margin-left: 60px;
+          .name {
+            font-size: 14px;
+            color: #F44336;
+            display: inline-block;
+            width: 120px;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+          .right_details {
+            color: #b8c1d1;
+            font-size: 12px;
+            i {
+              font-size: 14px;
+              &.status {
+                font-size: 10px;
+            }
+          }
+            li {
+              padding: 2px;
+          }
+        }
+          h4 {
+            margin: 0;
+            font-size: 13px;
+            color: #707780;
+            height: 20px;
+            overflow: hidden;
+            white-space: nowrap;
+            font-weight: 300;
+            text-overflow: ellipsis;
+        }
+      }
+    }
+  }
+}
+}
+
+@media (max-width: 760px) {
+.mail_widget .tabs a {
+  font-size: 9px !important;
+}
+}
+
+/****************************************************
+                  Twitter Widget
+****************************************************/
+
+.user {
+  float: left;
+  width: 100%;
+  line-height: 50px;
+  img {
+    float: left;
+    width: 50px;
+    height: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+  a {
+    display: block;
+    float: left;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    text-shadow: rgba(0, 0, 0, 0.15) 0 0 1px;
+}
+}

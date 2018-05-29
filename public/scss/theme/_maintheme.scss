@@ -1,0 +1,80 @@
+@each $key, $val in $colors {
+  .theme-#{$key} {
+    .topnavbar {
+      background-color: #fff;
+      .navbar-header {
+        background-color: $val;
+      }
+      .navbar-nav > {
+        li > {
+          .navbar-text, a {
+            color: $val;
+          }
+        }
+        .open > a, li > a:hover, .open > a:hover, li > a:focus, .open > a:focus {
+          color: $val;
+        }
+        .active > a, .open > a, .active > a:hover, .open > a:hover, .active > a:focus, .open > a:focus {
+          background-color: transparent;
+        }
+        li > [data-toggle='navbar-search'] {
+          color: #fff;
+        }
+      }
+      .nav-wrapper {
+        background-color: $val;
+      }
+    }
+
+    .navbar-brand {
+      color: #fff;
+      &:hover, &:active, &:focus {
+        color: #fff;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  @each $key, $val in $colors {
+    .theme-#{$key} {
+      .topnavbar {
+        background-color: $val;
+
+        .navbar-nav > {
+          .open > a {
+            box-shadow: 0 -3px 0 rgba(255, 255, 255, 0.5) inset;
+            &:hover, &:focus {
+              box-shadow: 0 -3px 0 rgba(255, 255, 255, 0.5) inset;
+            }
+          }
+          li > {
+            .navbar-text, a {
+              color: #fff;
+            }
+          }
+          .open > a, li > a:hover, .open > a:hover, li > a:focus, .open > a:focus {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+/********* Sidebar Light **************/
+.light, .dark {
+  @each $key, $val in $colors {
+    &.theme-#{$key} {
+      .sidebar .nav > li.active {
+        border-left-color: $val;
+      }
+      .sidebar-subnav > li.active > {
+        a:after, .nav-item:after {
+          border-color: $val;
+          background-color: $val;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,483 @@
+@media only screen and (min-width: 768px) {
+  .content-wrapper {
+    padding: 30px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    min-height: 100%;
+  }
+  .wrapper > {
+    .aside .aside-inner {
+      padding-top: 66px;
+    }
+    footer {
+      margin-left: 260px;
+    }
+    section {
+      margin-left: 260px;
+      &.has-sidebar-right {
+        margin-right: 240px;
+        + .offsidebar {
+          z-index: 1;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .wrapper > .aside {
+    margin-left: -220px;
+  }
+  .aside-toggled .wrapper > {
+    footer, section {
+      margin-left: 220px;
+    }
+    .aside {
+      margin-left: 0;
+    }
+  }
+  .csstransforms3d {
+    .wrapper {
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      > {
+        footer, section {
+          margin-left: 0;
+          -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+          -webkit-transition: -webkit-transform .3s ease;
+          transition: transform 0.3s ease;
+        }
+        .aside {
+          margin-left: 0;
+          -webkit-transform: translate3d(-260px, 0, 0);
+          transform: translate3d(-260px, 0, 0);
+          -webkit-transition: -webkit-transform .3s ease;
+          transition: transform 0.3s ease;
+        }
+      }
+    }
+    .aside-toggled .wrapper > {
+      footer, section {
+        -webkit-transform: translate3d(220px, 0, 0);
+        transform: translate3d(220px, 0, 0);
+      }
+      .aside {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .aside-collapsed {
+    .wrapper > .aside {
+      margin-left: -70px;
+    }
+    &.aside-toggled .wrapper > {
+      footer, section {
+        margin-left: 70px;
+      }
+      .aside {
+        margin-left: 0;
+      }
+    }
+  }
+  .csstransforms3d .aside-collapsed {
+    .wrapper {
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      > {
+        footer, section {
+          margin-left: 0;
+          -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+          -webkit-transition: -webkit-transform .3s ease;
+          transition: transform 0.3s ease;
+        }
+        .aside {
+          margin-left: 0;
+          -webkit-transform: translate3d(-70px, 0, 0);
+          transform: translate3d(-70px, 0, 0);
+          -webkit-transition: -webkit-transform .3s ease;
+          transition: transform 0.3s ease;
+        }
+      }
+    }
+    &.aside-toggled .wrapper > {
+      footer, section {
+        -webkit-transform: translate3d(70px, 0, 0);
+        transform: translate3d(70px, 0, 0);
+      }
+      .aside {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .aside-collapsed .wrapper > {
+    footer, section {
+      margin-left: 70px;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .aside-collapsed-text {
+    .wrapper > .aside {
+      margin-left: -90px;
+    }
+    &.aside-toggled .wrapper > {
+      footer, section {
+        margin-left: 90px;
+      }
+      .aside {
+        margin-left: 0;
+      }
+    }
+  }
+  .csstransforms3d .aside-collapsed-text {
+    .wrapper {
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      > {
+        footer, section {
+          margin-left: 0;
+          -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+          -webkit-transition: -webkit-transform .3s ease;
+          transition: transform 0.3s ease;
+        }
+        .aside {
+          margin-left: 0;
+          -webkit-transform: translate3d(-90px, 0, 0);
+          transform: translate3d(-90px, 0, 0);
+          -webkit-transition: -webkit-transform .3s ease;
+          transition: transform 0.3s ease;
+        }
+      }
+    }
+    &.aside-toggled .wrapper > {
+      footer, section {
+        -webkit-transform: translate3d(90px, 0, 0);
+        transform: translate3d(90px, 0, 0);
+      }
+      .aside {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .aside-collapsed-text .wrapper > {
+    footer, section {
+      margin-left: 90px;
+    }
+  }
+}
+
+@media (max-width: 1140px) {
+  .layout-fixed {
+    &.aside-toggled, &.offsidebar-open {
+      overflow-y: hidden;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .layout-fixed .wrapper > section {
+    margin-top: 55px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .layout-boxed {
+    overflow: auto !important;
+    .wrapper {
+      margin: 0 auto;
+      overflow: hidden;
+      box-shadow: 0 0 13px rgba(0, 0, 0, 0.25);
+      .offsidebar {
+        position: absolute !important;
+      }
+      > .aside {
+        left: inherit;
+      }
+      width: 970px;
+      .topnavbar-wrapper {
+        width: 970px;
+      }
+    }
+    &.layout-fixed .wrapper > .aside > .aside-inner {
+      left: inherit;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .layout-boxed .wrapper {
+    width: 1140px;
+    .topnavbar-wrapper {
+      width: 1140px;
+    }
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .layout-fs .wrapper > section {
+    overflow: hidden;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .layout-fs .wrapper > section {
+    top: 55px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .aside-float .wrapper > {
+    section {
+      padding-left: 15px;
+    }
+    footer {
+      left: 15px;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .aside-float {
+    &.aside-collapsed .topnavbar .navbar-header {
+      width: 100px;
+    }
+    &.aside-collapsed-text .topnavbar .navbar-header {
+      width: 120px;
+    }
+    &.layout-fs .wrapper > section > .content-wrapper {
+      padding: 0 0 0 20px;
+    }
+    .wrapper > .aside > .aside-inner {
+      margin-left: 15px;
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .aside-float.layout-boxed .wrapper > {
+    .aside > .aside-inner {
+      margin-left: 0;
+    }
+    section {
+      padding-left: 0;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .topnavbar .navbar-header {
+    width: 260px;
+    text-align: center;
+    .navbar-brand {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .topnavbar .navbar-nav > li > [data-toggle=navbar-search] {
+    color: #fff;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .topnavbar .navbar-text {
+    margin: 10px;
+  }
+  .nav > li > a {
+    &:hover, &:focus {
+      background-color: transparent !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .sidebar-toggle {
+    position: absolute !important;
+    top: 5px;
+    right: 0;
+    z-index: 3001;
+    > em {
+      color: #fff;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .topnavbar .navbar-form {
+    left: 260px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .topnavbar {
+    border: 0;
+    background-color: #23b7e5;
+    .navbar-nav > {
+      a {
+        box-shadow: inset 0 0 0 #000;
+        -webkit-transition: all .2s;
+        transition: all 0.2s;
+      }
+      .open > a {
+        box-shadow: inset 0 -3px 0 #19a5d1;
+        -webkit-transition: all .2s;
+        transition: all 0.2s;
+        &:focus, &:hover {
+          box-shadow: inset 0 -3px 0 #19a5d1;
+          -webkit-transition: all .2s;
+          transition: all 0.2s;
+        }
+        color: #fff;
+      }
+      li > {
+        .navbar-text, a {
+          color: #fff;
+        }
+      }
+      .open > a {
+        &:focus, &:hover {
+          color: #fff;
+          background-color: rgba(0, 0, 0, 0.1);
+        }
+      }
+      li > {
+        a {
+          &:focus, &:hover {
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.1);
+          }
+        }
+        [data-toggle=navbar-search] {
+          position: static;
+        }
+      }
+    }
+  }
+  .nav-wrapper {
+    position: relative;
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+    -ms-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+    &:after, &:before {
+      content: " ";
+      display: table;
+    }
+    &:after {
+      clear: both;
+    }
+    .nav > li {
+      position: relative;
+    }
+    .navbar-nav {
+      .open .dropdown-menu {
+        left: auto;
+        right: auto;
+      }
+      &.navbar-right .open .dropdown-menu {
+        left: auto;
+        right: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .aside-collapsed .topnavbar {
+    .navbar-header {
+      .brand-logo {
+        display: none;
+      }
+      .brand-logo-collapsed {
+        display: block;
+      }
+      width: 70px;
+    }
+    .navbar-form {
+      left: 70px;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .aside-collapsed-text .topnavbar {
+    .navbar-header {
+      .brand-logo {
+        display: none;
+      }
+      .brand-logo-collapsed {
+        display: block;
+      }
+      width: 90px;
+    }
+    .navbar-form {
+      left: 90px;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .offsidebar {
+    margin-top: 65px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .offsidebar-open {
+    overflow-y: auto;
+  }
+}
+
+@media print {
+  .btn, .offsidebar, .sidebar, .topnavbar {
+    display: none !important;
+    width: 0 !important;
+    height: 0 !important;
+  }
+  .content-wrapper {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+  }
+  .wrapper {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    > section {
+      margin: 0 !important;
+      padding: 0 !important;
+      width: 100% !important;
+    }
+  }
+  .content-wrapper {
+    overflow: hidden !important;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .sidebar:not(.show-scrollbar) {
+    margin-right: -17px;
+    overflow-y: scroll;
+  }
+}

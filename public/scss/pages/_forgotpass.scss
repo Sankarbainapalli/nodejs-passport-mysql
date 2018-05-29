@@ -1,0 +1,26 @@
+.forgot-pass {
+  background-color: #03A9F4;
+}
+
+.forgot-box {
+  position: absolute;
+  max-width: 400px;
+  z-index: 100;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.forgot-pass .forgot-box {
+  .msg {
+    color: #999;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #00BCD4;
+  }
+}

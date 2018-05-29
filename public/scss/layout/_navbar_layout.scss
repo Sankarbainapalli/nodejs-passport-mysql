@@ -1,0 +1,62 @@
+body {
+  height: 100%;
+}
+
+html {
+  height: 100%;
+  direction: ltr;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+}
+
+[data-now] {
+  display: inline-block;
+}
+
+/*=======NAV BAR========*/
+
+.navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+
+.navbar-brand {
+  float: left;
+  height: 66px;
+  padding: 10px 15px;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.nav-pills + .tab-content {
+  border: 0;
+  padding: 0;
+}
+
+.nav.nav-pills .active > a {
+  background-color: #5d9cec;
+}
+
+.navbar-top .navbar-nav > .active > a {
+  color: #999;
+  &:focus, &:hover {
+    color: #d1d2d3;
+  }
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+  color: #666;
+  &:focus, &:hover {
+    color: #222;
+  }
+}
+
+.navbar {
+  filter: none !important;
+  .dropdown-menu {
+    filter: none !important;
+  }
+}
+
+.topnavbar {
+  filter: none !important;
+}

@@ -1,0 +1,3 @@
+.tablesaw-bar .btn:not(.btn-link):not(.btn-circle) {
+  @include box-shadow(none);
+}

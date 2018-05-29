@@ -1,0 +1,360 @@
+.icon-button-demo button {
+  margin-right: 5px;
+  margin-bottom: 12px;
+}
+
+.button-demo {
+  ul {
+    padding-left: 0;
+    li {
+      list-style: none;
+      padding-left: 0;
+      display: inline-block;
+      margin-right: 7px;
+      .btn {
+        display: block;
+        min-width: 175px;
+      }
+    }
+  }
+  .btn {
+    margin-right: 8px;
+    margin-bottom: 13px;
+    min-width: 120px;
+  }
+}
+
+.demo-btn .btn, .demo-button-groups .btn-group, .btn-group-vertical {
+  margin-right: 15px;
+  margin-bottom: 20px;
+}
+
+.demo-button-toolbar .btn-toolbar {
+  margin-bottom: 10px;
+}
+
+.demo-button-nesting > .btn-group {
+  margin-right: 15px;
+  margin-bottom: 20px;
+}
+
+.demo-basic-dropdowns .btn {
+  min-width: 120px;
+}
+
+.demo-animation {
+  img {
+    display: inline-block;
+    height: 280px;
+    margin-bottom: 20px;
+  }
+  text-align: center;
+}
+
+.demo-social-btn .btn-group {
+  margin-right: 15px;
+  margin-bottom: 20px;
+}
+
+.demo-checkbox label, .demo-radio-button label {
+  min-width: 178px;
+  height: 30px !important;
+}
+
+.demo-knob-chart div {
+  margin-right: 15px;
+}
+
+.demo-switch {
+  .switch {
+    display: inline-block;
+    min-width: 170px;
+  }
+  .demo-switch-title {
+    min-width: 95px;
+    display: inline-block;
+  }
+}
+
+.demo-ColWrap {
+  text-align: center;
+  padding-top: 50px;
+  width: 150px;
+  height: 150px;
+  margin-left: 40px;
+  margin-bottom: 20px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 50%;
+  .ColName {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+}
+
+.demo-icon {
+  .icon-display {
+    &:hover {
+      -webkit-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+      -o-transform: scale(1.5);
+      transform: scale(1.5);
+    }
+    cursor: pointer;
+    display: block;
+    font-size: 22px;
+    height: 32px;
+    line-height: 1;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    -webkit-transition: -webkit-transform .2s;
+    transition: -webkit-transform .2s;
+    -o-transition: -o-transform .2s;
+    transition: transform .2s;
+    transition: transform .2s, -webkit-transform .2s, -o-transform .2s;
+    width: 64px;
+  }
+  .icon-name {
+    color: grey;
+    display: block;
+    font-size: 13px;
+    margin-bottom: 45px;
+    margin-top: 5px;
+    overflow: hidden;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+.icon-section {
+  clear: both;
+  overflow: hidden;
+  padding-left: 28px;
+}
+
+.icon-container {
+  width: 240px;
+  padding: 1.5em 0em;
+  float: left;
+  position: relative;
+  text-align: left;
+  [class^="ion-"], [class*=" ion-"] {
+    color: #555;
+    font-size: 18px;
+    position: absolute;
+    margin-top: 0px;
+    transition: .3s;
+  }
+  &:hover {
+    [class^="ion-"], [class*=" ion-"] {
+      font-size: 2.2em;
+      margin-top: -10px;
+    }
+  }
+  [class^="ti-"], [class*=" ti-"] {
+    color: #555;
+    position: absolute;
+    margin-top: 3px;
+    transition: .3s;
+  }
+  &:hover {
+    [class^="ti-"], [class*=" ti-"] {
+      font-size: 2.2em;
+      margin-top: -5px;
+    }
+    .icon-caption {
+      color: #444;
+    }
+  }
+}
+
+.icon-caption {
+  color: #aaa;
+  margin-left: 35px;
+  transition: .3s;
+}
+
+.icon-container:hover .icon-caption {
+  margin-left: 40px;
+}
+
+.demo-glyphicons {
+  margin: 0 20px;
+  overflow: hidden;
+}
+
+.demo-glyphicons-list {
+  padding-left: 0;
+  padding-right: 10px;
+  list-style: none;
+}
+
+.demo-glyphicons {
+  li {
+    float: left;
+    width: 25%;
+    height: 115px;
+    padding: 18px;
+    font-size: 10px;
+    line-height: 1.4;
+    text-align: center;
+  }
+  .glyphicon {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 24px;
+  }
+  .glyphicon-class {
+    display: block;
+    text-align: center;
+    word-wrap: break-word;
+  }
+  li:hover {
+    color: #fff;
+    background-color: #00BCD4;
+  }
+}
+
+.demo-preloader .preloader {
+  margin-right: 40px;
+}
+
+.demo-loader {
+  margin: 45px !important;
+  display: inline-block;
+  text-align: center;
+}
+
+.irs-demo {
+  margin-bottom: 40px;
+  .irs {
+    margin-top: 15px;
+  }
+}
+
+.demo-labels .label {
+  margin-right: 15px;
+  line-height: 30px;
+}
+
+.demo-contextmenu {
+  height: 200px;
+  border: 1px solid #ddd;
+  background-color: #f8f8f8;
+}
+
+.scroll-example {
+  overflow: hidden;
+  border: 1px solid #e0e0e0;
+  -webkit-box-shadow: 1px 1px 2px 0px rgba(200, 200, 200, 0.3);
+  -moz-box-shadow: 1px 1px 2px 0px rgba(200, 200, 200, 0.3);
+  box-shadow: 1px 1px 2px 0px rgba(200, 200, 200, 0.3);
+  background-color: #fefefe;
+  padding: 10px;
+}
+
+.offsidebar {
+  .nav-tabs + .tab-content {
+    padding: 5px 0;
+  }
+  h2 {
+    margin-left: 25px;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+  .settings-title {
+    background: #f9f9f9;
+    padding: 20px;
+    border-bottom: 1px solid #e7eaec;
+    margin-bottom: 10px;
+    h3 {
+      margin-bottom: 3px;
+      margin-top: 0;
+      font-size: 14px;
+      padding-left: 2px;
+    }
+  }
+  #app-settings .setting-list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+    li {
+      padding: 15px;
+      position: relative;
+      span {
+        margin-left: 10px;
+      }
+      .switch {
+        position: absolute;
+        top: 15px;
+        right: 5px;
+      }
+    }
+  }
+}
+
+.skin_selector {
+  list-style: none;
+  padding-left: 0;
+  overflow-y: hidden;
+  li {
+    padding: 10px 10px 4px 25px;
+    position: relative;
+    cursor: pointer;
+    &.active {
+      background-color: #f2f2f2;
+      &:after {
+        font-family: 'Material Icons';
+        position: absolute;
+        top: 10px;
+        right: 25px;
+        content: '\E876';
+        font-size: 18px;
+        font-weight: bold;
+      }
+    }
+    &:hover {
+      background-color: #eee;
+    }
+    div {
+      width: 24px;
+      height: 24px;
+      display: inline-block;
+      -webkit-border-radius: 50px;
+      -moz-border-radius: 50px;
+      -ms-border-radius: 50px;
+      border-radius: 50px;
+    }
+    span {
+      position: relative;
+      bottom: 7px;
+      left: 5px;
+      color: #757575;
+    }
+  }
+}
+
+.skin_selector{
+  @each $key, $val in $colors {
+    .#{$key} {
+      background-color: $val;
+    }
+  }
+}
+
+@each $key, $val in $colors {
+  .theme-#{$key} {
+    .skin_selector{
+      li{
+        &.active{
+          &:after{
+            color: $val;
+          }
+        }
+      }
+    }
+  }
+}

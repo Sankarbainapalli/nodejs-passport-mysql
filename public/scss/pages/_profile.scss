@@ -1,0 +1,91 @@
+.profile {
+  .contact > h2, .connection > h2 {
+    font-size: 16px;
+    margin: 0 20px 15px;
+  }
+
+  .contact, .connection {
+    padding: 20px;
+  }
+
+  .contact ul {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 0 18px;
+
+    li {
+      position: relative;
+      padding: 8px 0 8px 35px;
+
+      i {
+        font-size: 18px;
+        vertical-align: top;
+        line-height: 100%;
+        position: absolute;
+        left: 0;
+        width: 18px;
+        text-align: center;
+      }
+    }
+  }
+
+  .connection a img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .connection-pad {
+
+    a {
+      display: block;
+      padding: 4px;
+    }
+
+    padding: 0 15px;
+  }
+}
+
+.profile_body {
+  padding-left: 2px;
+  padding-top: 5px;
+  .tab-content {
+    padding: 30px;
+  }
+}
+
+.profile .dl-horizontal dt {
+  text-align: left;
+  color: #757575;
+}
+
+.profile-photogallery {
+  position: relative;
+  text-align: center;
+}
+
+.photogallery-menu {
+  list-style: none;
+  padding: 5px;
+  margin-bottom: 30px;
+
+  > li {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+
+    &.active > a {
+      color: #000;
+    }
+
+    > a > i {
+      margin-right: 4px;
+      font-size: 20px;
+      vertical-align: middle;
+      margin-top: -2px;
+    }
+
+    &:not(.active) > a {
+      color: #999;
+    }
+  }
+}

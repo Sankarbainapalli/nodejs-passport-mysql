@@ -1,0 +1,44 @@
+.tooltip .tooltip-inner {
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 0.25px;
+  line-height: 24px;
+}
+
+.primary-tooltip + .tooltip > {
+  .tooltip-inner {
+    background-color: #3F51B5 !important;
+}
+  .tooltip-arrow {
+    border-left-color: #3F51B5 !important;
+}
+}
+
+.success-tooltip + .tooltip > {
+  .tooltip-inner {
+    background-color: #4CAF50;
+}
+  .tooltip-arrow {
+    border-top-color: #4CAF50;
+}
+}
+
+.warning-tooltip + .tooltip > {
+  .tooltip-inner {
+    background-color: #FF9800;
+}
+  .tooltip-arrow {
+    border-bottom-color: #FF9800;
+}
+}
+
+.danger-tooltip + .tooltip > {
+  .tooltip-inner {
+    background-color: #fb483a;
+}
+  .tooltip-arrow {
+    border-right-color: #fb483a;
+}
+}

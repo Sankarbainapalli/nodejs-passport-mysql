@@ -1,0 +1,129 @@
+th {
+  font-weight: 400;
+}
+
+.table {
+  color: #777777;
+  .progress-small {
+    margin: 7px 0px 8px;
+}
+  td, th {
+    font-size: 14px;
+}
+}
+
+.b-b-0 td {
+  border-bottom: 0 !important;
+}
+
+.table {
+> {
+  tfoot > tr > th, thead > tr > th {
+    font-weight: 400;
+    color: #616161;
+}
+}
+  tbody tr {
+    td, th {
+      padding: 10px;
+      border-top: 1px solid #eee;
+      border-bottom: 1px solid #eee;
+  }
+    &.primary {
+      td, th {
+        background-color: #3F51B5;
+        color: #fff;
+    }
+  }
+    &.success {
+      td, th {
+        background-color: #4CAF50;
+        color: #fff;
+    }
+  }
+    &.info {
+      td, th {
+        background-color: #00b0e4;
+        color: #fff;
+    }
+  }
+    &.warning {
+      td, th {
+        background-color: #FF9800;
+        color: #fff;
+    }
+  }
+    &.danger {
+      td, th {
+        background-color: #fb483a;
+        color: #fff;
+    }
+  }
+}
+  thead tr th {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+}
+
+.table-bordered {
+  border-top: 1px solid #eee;
+  tbody tr {
+    td, th {
+      padding: 10px;
+      border: 1px solid #eee;
+  }
+}
+  thead tr th {
+    padding: 10px;
+    border: 1px solid #eee;
+}
+}
+
+.table {
+  > tbody > tr > .thick-line {
+    border-top: 2px solid;
+}
+  tbody > tr:first-child > td {
+    border-top: 0;
+}
+}
+
+.editable-table {
+  + input {
+    &.error {
+      border: 1px solid #f44336;
+      outline: 0;
+      outline-offset: 0;
+  }
+    border: 1px solid #212121 !important;
+    outline: 0 !important;
+    outline-offset: 0 !important;
+    &:focus {
+      border: 1px solid #212121 !important;
+      outline: 0 !important;
+      outline-offset: 0 !important;
+  }
+}
+  td:focus {
+    outline: 0;
+}
+}
+
+.editable-input {
+  .table-condensed {
+    thead tr th {
+      padding: 5px !important;
+      border: none !important;
+  }
+    tbody tr {
+      td, th {
+        padding: 5px !important;
+        border: none !important;
+    }
+  }
+}
+  .combodate select {
+    margin-bottom: 5px;
+}
+}

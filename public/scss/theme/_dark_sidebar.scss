@@ -1,0 +1,97 @@
+.dark {
+  .sidebar {
+    .nav-heading {
+      color: #666;
+  }
+    .nav > li {
+    > {
+      a {
+        color: #aaaaaa;
+    }
+      .nav-item {
+        color: #aaaaaa;
+        color: #aaaaaa;
+    }
+      a:focus, .nav-item:focus, a:hover, .nav-item:hover {
+        color: #FFFFFF;
+    }
+      a > em, .nav-item > em {
+        color: inherit;
+    }
+    }
+      &.active, &.open, &.active > a, &.open > a, &.active .nav, &.open .nav {
+        background-color: #292929;
+        color: #FFFFFF;
+    }
+      &.active > a > em, &.open > a > em {
+        color: #FFFFFF;
+    }
+  }
+}
+  .sidebar-subnav {
+    background-color: #292929;
+  > {
+    .sidebar-subnav-header {
+      color: #aaaaaa;
+  }
+    li {
+    > {
+      a, .nav-item {
+        color: #aaaaaa;
+    }
+      a:focus, .nav-item:focus, a:hover, .nav-item:hover {
+        color: #FFFFFF;
+        background-color: inherit;
+    }
+    }
+      &.active > {
+        a, .nav-item {
+          color: #FFFFFF;
+      }
+    }
+  }
+  }
+}
+  .sidebar {
+    background-color: #222;
+    .nav > li > a {
+      &:hover, &:focus {
+        text-decoration: none;
+        background-color: #292929;
+    }
+  }
+}
+  .sidebar-subnav > .sidebar-subnav-header {
+    color: #FFFFFF;
+}
+  .sidebar .nav {
+    > li {
+      &.menu-open {
+        background-color: #292929 !important;
+        > a:first-child {
+          color: #fff;
+      }
+    }
+      &.sub-menu-open {
+        background-color: rgba(33, 33, 33, 0.51) !important;
+    }
+  }
+    .sub-menu-open .sidebar-subnav {
+      background-color: rgba(33, 33, 33, 0.51) !important;
+  }
+}
+  .sidebar-subnav > li {
+    &.active > {
+      a, .nav-item {
+        color: #444;
+        background-color: rgba(33, 33, 33, 0.51) !important;
+    }
+  }
+    > a {
+      &:hover, &:focus {
+        text-decoration: none;
+        background-color: rgba(33, 33, 33, 0.51) !important;
+    }
+  }
+}
+}

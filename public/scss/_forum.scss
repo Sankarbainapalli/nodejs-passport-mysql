@@ -1,0 +1,152 @@
+.forum-item {
+  margin: 10px 0;
+  padding: 10px 0 20px;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.views-number {
+  font-size: 24px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.forum-item {
+  small {
+    color: #999;
+}
+  .forum-sub-title {
+    color: #999;
+    margin-left: 50px;
+}
+}
+
+.forum-title {
+  margin: 15px 0 15px 0;
+}
+
+.forum a {
+  text-decoration: none;
+}
+
+.forum-info {
+  text-align: center;
+}
+
+.forum-desc {
+  color: #999;
+}
+
+.forum-icon {
+  float: left;
+  width: 30px;
+  margin-right: 20px;
+  text-align: center;
+}
+
+a.forum-item-title {
+  color: inherit;
+  display: block;
+  font-size: 20px;
+  font-weight: 500;
+  &:hover {
+    color: inherit;
+}
+}
+
+.forum-icon .material-icons {
+  font-size: 30px;
+  margin-top: 8px;
+  color: #9b9b9b;
+}
+
+.forum-item.active {
+  .material-icons, a.forum-item-title {
+    color: #2196F3;
+}
+}
+
+@media (max-width: 992px) {
+.forum-info {
+  margin: 15px 0 10px 0;
+  display: none;
+}
+.forum-desc {
+  float: none !important;
+}
+}
+
+/*forum post*/
+
+.forum_post a {
+  color: #555;
+}
+
+.forum-post-info {
+  padding: 2px 15px 2px 15px;
+  background: #f9f9f9;
+  border: 1px solid #f1f1f1;
+  margin-bottom: 10px;
+}
+
+.forum_post {
+  .forum-replies {
+    background: #fff !important;
+    .forum-reply-thumb img {
+      width: 70px;
+  }
+}
+  .img-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+}
+
+.forum-reply-details {
+  margin-left: -20px;
+}
+
+.forum_post {
+  .forum-replies .forum-reply-thumb .forum-name-replied {
+    font-weight: bold;
+    line-height: 1px;
+    margin-top: 18px;
+}
+  .forum-comments {
+    border-left: none;
+    border-right: none;
+    background: #eee;
+    margin-top: 20px;
+    padding: 10px 15px;
+    .comment-thumbnail img {
+      width: 52px;
+      height: 52px;
+  }
+}
+  .comment-name {
+    font-weight: bold;
+}
+}
+
+.contact-box {
+  background-color: #ffffff;
+  border: 1px solid #e7eaec;
+  margin-bottom: 20px;
+  padding: 10px;
+  > a {
+    color: inherit;
+    text-decoration: none;
+}
+  a {
+    &:hover, &:focus {
+      text-decoration: none;
+  }
+}
+  address {
+    color: #9E9E9E;
+}
+  h3 {
+    font-size: 18px;
+    color: #555;
+}
+}

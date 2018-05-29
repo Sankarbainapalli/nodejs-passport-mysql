@@ -1,0 +1,226 @@
+.dropdown-menu {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+  margin-top: 5px;
+  z-index: 9999;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  border: none;
+  .divider {
+    margin: 5px 0;
+}
+  .header {
+    text-align: center;
+    padding: 12px;
+    color: rgba(22, 24, 27, 0.87);
+    border-bottom: 1px solid rgba(22, 24, 27, 0.12);
+}
+  .body {
+    min-width: 300px;
+    max-width: 380px;
+}
+  .media-list, li.media {
+    margin: 0;
+}
+  ul.menu {
+    padding-left: 0;
+    .icon-circle {
+      width: 36px;
+      height: 36px;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      border-radius: 50%;
+      color: #fff;
+      text-align: center;
+      display: inline-block;
+      i {
+        font-size: 18px;
+        line-height: 36px;
+    }
+  }
+    li {
+      &:last-child {
+        border-bottom: none;
+    }
+      a {
+        padding: 7px 11px;
+        padding-bottom: 2px;
+        display: inline-block;
+        text-decoration: none;
+        -moz-transition: 0.5s;
+        -o-transition: 0.5s;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+    }
+      border-bottom: 1px solid #eee;
+      &:hover {
+        background-color: #f1f4fb;
+    }
+  }
+    .menu-note {
+      h4 {
+        font-size: 13px;
+        color: #333;
+        margin-top: 10px;
+    }
+      p {
+        font-size: 11px;
+        margin-top: 10px;
+        color: #aaa;
+    }
+  }
+}
+  .footer a {
+    text-align: center;
+    background-color: #f6f6f6;
+    border-top: 1px solid #eee;
+    padding: 12px 0 12px 0;
+    font-size: 12px;
+    margin-bottom: -5px;
+    &:hover {
+      color: #444;
+  }
+}
+> {
+  li > a {
+    padding: 6px 13px;
+    color: #777;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    font-size: 14px;
+    line-height: 25px;
+    &:focus, &:hover {
+      color: #777;
+      text-decoration: none;
+      background-color: #f5f5f5;
+  }
+    i.material-icons {
+      margin-right: 9px;
+      margin-top: -2px;
+      vertical-align: middle;
+      font-size: 15px !important;
+  }
+}
+  .dropdown-header {
+    padding: 10px 13px 4px;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: default;
+}
+}
+}
+
+.dropdown-header {
+  color: #333;
+}
+
+.dropdown-menu > {
+  .active > a {
+    color: #666;
+    text-decoration: none;
+    background-color: #eee;
+    &:hover, &:focus {
+      color: #666;
+      text-decoration: none;
+      background-color: #eee;
+  }
+}
+  .disabled > a {
+    color: #ccc;
+    &:hover, &:focus {
+      color: #ccc;
+  }
+}
+}
+
+.dropdown-animated {
+  -webkit-animation-duration: .3s !important;
+  -moz-animation-duration: .3s !important;
+  -o-animation-duration: .3s !important;
+  animation-duration: .3s !important;
+}
+
+.dropdown-menu.bullet {
+  &:after, &:before {
+    bottom: 100%;
+    left: 20px;
+    border: 7px solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+  &:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-bottom-color: #FFF;
+    border-width: 5px;
+    margin-left: -5px;
+}
+  &:before {
+    border-color: rgba(229, 229, 229, 0);
+    border-bottom-color: #E5E5E5;
+    border-width: 6px;
+    margin-left: -6px;
+    margin-right: -1px;
+}
+}
+
+.dropdown-menu-right.bullet {
+  &:after, &:before {
+    left: auto;
+    right: 11px;
+}
+}
+
+.dropup .dropdown-menu {
+  &:after, &:before {
+    display: none;
+}
+}
+
+.dropdown-menu-default > li > a {
+  &:hover, &:focus {
+    background-color: #e4e7ea;
+}
+}
+
+.dropdown-menu-primary > li > a {
+  &:hover, &:focus {
+    color: #ffffff;
+    background-color: #3F51B5;
+}
+}
+
+.dropdown-menu-success > li > a {
+  &:hover, &:focus {
+    color: #ffffff;
+    background-color: #4CAF50;
+}
+}
+
+.dropdown-menu-info > li > a {
+  &:hover, &:focus {
+    color: #ffffff;
+    background-color: #00b0e4;
+}
+}
+
+.dropdown-menu-warning > li > a {
+  &:hover, &:focus {
+    color: #ffffff;
+    background-color: #FF9800;
+}
+}
+
+.dropdown-menu-danger > li > a {
+  &:hover, &:focus {
+    color: #ffffff;
+    background-color: #fb483a;
+}
+}

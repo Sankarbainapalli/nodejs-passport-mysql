@@ -1,0 +1,105 @@
+.file-box {
+  float: left;
+  width: 181px;
+}
+
+.file-manager {
+  h5 {
+    text-transform: uppercase;
+  }
+  list-style: none outside none;
+  margin: 0;
+  padding: 0;
+  a {
+    text-decoration: none;
+  }
+}
+
+.folder-list li {
+  a {
+    color: #666666;
+    display: block;
+    padding: 5px 0;
+  }
+  border-bottom: 1px solid #e7eaec;
+  display: block;
+  i {
+    margin-right: 8px;
+    color: #3d4d5d;
+  }
+}
+
+.file-manager h5.tag-title {
+  margin-top: 20px;
+}
+
+ul.tag-list li {
+  list-style: none;
+}
+
+.tag-list li {
+  float: left;
+  a {
+    font-size: 10px;
+    background-color: #f3f3f4;
+    padding: 5px 12px;
+    color: inherit;
+    border-radius: 2px;
+    border: 1px solid #e7eaec;
+    margin-right: 5px;
+    margin-top: 5px;
+    display: block;
+  }
+}
+
+.file {
+  border: 1px solid #e7eaec;
+  padding: 0;
+  background-color: #ffffff;
+  position: relative;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  a {
+    text-decoration: none;
+  }
+}
+
+.file-manager .hr-dashed {
+  margin: 15px 0;
+}
+
+.file {
+  .icon, .image {
+    height: 100px;
+    overflow: hidden;
+  }
+  .icon {
+    padding: 15px 10px;
+    text-align: center;
+  }
+}
+
+.file-control {
+  color: inherit;
+  font-size: 11px;
+  margin-right: 10px;
+  &.active {
+    text-decoration: underline;
+  }
+}
+
+.file {
+  .icon i {
+    font-size: 70px;
+    color: #dadada;
+  }
+  .file-name {
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-top: 1px solid #e7eaec;
+  }
+}
+
+.file-name small {
+  color: #676a6c;
+}

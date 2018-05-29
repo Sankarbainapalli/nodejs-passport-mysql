@@ -1,0 +1,64 @@
+.breadcrumb {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+  background-color: transparent;
+  margin-bottom: 10px;
+  li {
+    a {
+      color: #00BCD4;
+      text-decoration: none;
+  }
+    .material-icons {
+      font-size: 18px;
+      position: relative;
+      top: 4px;
+  }
+}
+  > li + li:before {
+    color: #00BCD4;
+}
+}
+
+.breadcrumb-arrow > li + li:before {
+  content: "\00bb";
+}
+
+.breadcrumb > .active {
+  color: #999;
+}
+
+@each $key, $val in $colors {
+  .breadcrumb-col-#{$key} {
+    li {
+      a {
+        color: $val !important;
+      }
+    }
+
+    li + li:before {
+      color: $val;
+    }
+  }
+
+  .breadcrumb-bg-#{$key} {
+    background-color: $val !important;
+
+    li {
+      a {
+        color: #fff;
+
+        .material-icons {
+          padding-bottom: 8px;
+        }
+      }
+
+      color: #fff !important;
+    }
+
+    li + li:before {
+      color: #fff;
+    }
+  }
+}

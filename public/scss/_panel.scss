@@ -1,0 +1,115 @@
+.panel-group {
+  @each $key, $val in $colors {
+    .panel-col-#{$key} {
+      border: 1px solid $val;
+
+      .panel-title {
+        background-color: $val !important;
+        color: #fff;
+    }
+
+      .panel-body {
+        border-top-color: transparent !important;
+    }
+  }
+}
+
+  .panel-body {
+    padding: 30px 30px;
+  }
+
+  .panel {
+    position: relative;
+    border-width: 0;
+    -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .1);
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .1);
+    @include border-radius(4px);
+
+    .panel-title {
+      .material-icons {
+        float: left;
+        line-height: 16px;
+        margin-right: 8px;
+    }
+  }
+
+    .panel-heading {
+      padding: 0;
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
+
+      a {
+        display: block;
+        padding: 15px 30px;
+
+        &:hover,
+        &:focus,
+        &:active {
+          text-decoration: none;
+      }
+    }
+  }
+
+    .panel-body {
+      color: #555;
+  }
+}
+
+  .panel-default
+    .panel-heading {
+      background-color: #fff;
+  }
+
+  .panel-info
+    .panel-heading {
+      color: #fff;
+      background-color: #00b0e4;
+  }
+
+  .panel-primary
+    .panel-heading {
+      background-color: #3F51B5;
+      color: #fff;
+  }
+
+  .panel-success
+    .panel-heading {
+      background-color: #4CAF50;
+      color: #fff;
+  }
+
+  .panel-warning
+    .panel-heading {
+      background-color: #FF9800;
+      color: #fff;
+  }
+
+  .panel-danger
+    .panel-heading {
+      background-color: #fb483a;
+      color: #fff;
+  }
+}
+
+.col_body  {
+  @each $key, $val in $colors {
+    .panel-col-#{$key} {
+      .panel-body {
+        border-top-color: #fff !important;
+        background-color: $val;
+        @include border-radius(4px);
+        color: #fff;
+    }
+  }
+}
+  @each $key, $val in $context_colors {
+    .panel-#{$key} {
+      .panel-body {
+        border-top-color: #fff !important;
+        background-color: $val;
+        @include border-radius(4px);
+        color: #fff;
+      }
+    }
+  }
+}

@@ -1,0 +1,83 @@
+.user-card-wrapper {
+  float: left;
+  width: 100%;
+  padding: 10px;
+  position: relative;
+}
+
+.user-card {
+  float: left;
+  text-align: center;
+  width: 100%;
+
+  &:hover {
+    @include box-shadow(0 0 15px #b0b0b0);
+}
+  > img {
+    width: 100%;
+}
+}
+
+.user-card-info {
+  float: left;
+  padding: 15px 0px 10px;
+  width: 100%;
+  background: #FFF;
+  position: relative;
+  z-index: 1;
+  @include transition(all 0.25s linear);
+}
+
+.user-card:hover .user-card-info {
+  padding-bottom: 60px;
+  margin-top: -60px;
+}
+
+.user-card-info {
+  h6 {
+    color: #141b20;
+    float: left;
+    font-size: 20px;
+    margin: 0 0 10px;
+    width: 100%;
+}
+  > span {
+    color: #767c84;
+    float: left;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    width: 100%;
+}
+}
+
+.user-card-socials {
+  width: 100%;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.user-card:hover .user-card-socials {
+  bottom: 20px;
+  visibility: visible;
+  opacity: 1;
+}
+
+.user-card-socials {
+  > a {
+    border: 1px solid #a4a6a8;
+    color: #a4a6a8;
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 3px;
+    width: 30px;
+    border-radius: 50%;
+}
+  a:hover {
+    border-color: #2196F3;
+    color: #2196F3;
+}
+}

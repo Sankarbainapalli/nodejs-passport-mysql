@@ -1,0 +1,51 @@
+.error {
+  &.error_four {
+    background-color: #f5f5f5;
+  }
+  &.error_five {
+    background-color: #feebbd;
+  }
+}
+
+.error-box {
+  position: absolute;
+  max-width: 400px;
+  z-index: 100;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.error {
+  .error-message {
+    color: #a3a7aa;
+    font-family: 'Nunito', sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    letter-spacing: 0.25px;
+    line-height: 44px;
+    text-align: center;
+    padding-top: 60px;
+  }
+  .error-bottom {
+    padding-top: 40px;
+    text-align: center;
+    .report-error {
+      color: #a3a7aa;
+      font-family: 'Nunito', sans-serif;
+      font-size: 14px;
+      font-weight: 300;
+      letter-spacing: 0.25px;
+      line-height: 26px;
+      padding-top: 10px;
+      > a {
+        color: #a3a7aa;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+.error_five .error-box img {
+  height: 350px;
+}

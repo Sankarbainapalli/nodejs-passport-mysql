@@ -1,0 +1,116 @@
+.eagle-checkbox {
+  position: relative;
+  display: block;
+  &.disabled .eagle-checkbox-label {
+    color: #636c72;
+    cursor: not-allowed;
+}
+}
+
+.eagle-checkbox-label {
+  padding-left: 1.25rem;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+
+.eagle-checkbox-input {
+  position: absolute;
+  margin-top: .25rem;
+  margin-left: -1.25rem;
+  &:only-child {
+    position: static;
+}
+}
+
+.eagle-checkbox-inline {
+  display: inline-block;
+  .eagle-checkbox-label {
+    vertical-align: middle;
+}
+  + .eagle-checkbox-inline {
+    margin-left: 0.75rem;
+}
+}
+
+.eagle-check {
+  position: relative;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  min-height: 1.5rem;
+  padding-left: 2.0rem;
+  cursor: pointer;
+  font-weight: normal;
+}
+
+.eagle-check-input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  &:checked ~ .eagle-check-indicator {
+    color: #fff;
+    background-color: #00BCD4;
+    border-color: #00BCD4;
+}
+  &:active ~ .eagle-check-indicator {
+    color: #fff;
+    background-color: #8fcafe;
+    border-color: #8fcafe;
+}
+  &:disabled ~ {
+    .eagle-check-indicator {
+      cursor: not-allowed;
+      background-color: #eceeef;
+      border-color: #ccc;
+  }
+    .eagle-check-description {
+      color: #636c72;
+      cursor: not-allowed;
+  }
+}
+}
+
+.eagle-check-indicator {
+  position: absolute;
+  top: .25rem;
+  left: 0;
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: 50% 50%;
+  background-size: 50% 50%;
+}
+
+.custom-checkbox {
+  .eagle-check-indicator {
+    border-radius: 0.25rem;
+}
+  .eagle-check-input {
+    &:checked ~ .eagle-check-indicator {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E");
+  }
+    &:indeterminate ~ .eagle-check-indicator {
+      background-color: #00BCD4;
+      border-color: #00BCD4;
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 4'%3E%3Cpath stroke='%23fff' d='M0 2h4'/%3E%3C/svg%3E");
+  }
+}
+}
+
+.custom-radio {
+  .eagle-check-indicator {
+    border-radius: 50%;
+}
+  .eagle-check-input:checked ~ .eagle-check-indicator {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='3' fill='%23fff'/%3E%3C/svg%3E");
+}
+}

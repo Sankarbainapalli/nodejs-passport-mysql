@@ -1,0 +1,35 @@
+.popover {
+  border: 1px solid #e9ecf2;
+  border-radius: 0px;
+  .popover-title {
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.25px;
+    line-height: 24px;
+    border-radius: 0px;
+    border-bottom: #d7dce5;
+    background-color: #F44336;
+}
+  .popover-content {
+    color: #9398a0;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 0.25px;
+    line-height: 24px;
+}
+  &.top > .arrow {
+    border-top-color: #d7dce5 !important;
+}
+  &.right > .arrow {
+    border-right-color: #d7dce5 !important;
+}
+  &.bottom > .arrow {
+    border-bottom-color: #d7dce5 !important;
+}
+  &.left > .arrow {
+    border-left-color: #d7dce5 !important;
+}
+}
